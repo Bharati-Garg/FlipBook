@@ -10,7 +10,7 @@
 
 /* PDF.js additional */
 
-.secondaryToolbarButton.bookFlip::before {
+/* .secondaryToolbarButton.bookFlip::before {
 	content: url(secondaryToolbarButton-bookFlip.png);
 }
 
@@ -18,4 +18,4 @@
 	.secondaryToolbarButton.bookFlip::before {
 		content: url(secondaryToolbarButton-bookFlip@2x.png);
 	}
-}
+} */

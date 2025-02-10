@@ -112,6 +112,7 @@
 .annotationLayer .choiceWidgetAnnotation select,
 .annotationLayer .buttonWidgetAnnotation.checkBox input,
 .annotationLayer .buttonWidgetAnnotation.radioButton input {
+  display: none;
   background-color: rgba(0, 54, 255, 0.13);
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -142,6 +143,7 @@
 .annotationLayer .choiceWidgetAnnotation select[disabled],
 .annotationLayer .buttonWidgetAnnotation.checkBox input[disabled],
 .annotationLayer .buttonWidgetAnnotation.radioButton input[disabled] {
+  display: none;
   background: none;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -422,6 +424,13 @@ select {
   font: message-box;
   outline: none;
 }
+
+button,
+a,
+select{
+  display: none;
+}
+
 
 .hidden {
   display: none !important;
