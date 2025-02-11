@@ -112,7 +112,7 @@ var bookFlip = {
     }
     $("#viewer").turn({
       elevation: 50,
-      duration: 5000, // Milliseconds (500ms = 0.5 sec)
+      duration: 3000, // Milliseconds (500ms = 0.5 sec)
       width:
         this._size(PDFViewerApplication.page, "width") * this._spreadMult(),
       height: this._size(PDFViewerApplication.page, "height"),
