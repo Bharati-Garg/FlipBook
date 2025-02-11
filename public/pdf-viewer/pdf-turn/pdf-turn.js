@@ -1,10 +1,3 @@
-  /********************************************************/
- /**     HERE MAIN MODIFIED PART FOR turnjs SUPPORT     **/
-/********************************************************/
-/// requires jquery and turnjs
-/// all code added in viewer.js (from pdfjs build) in order to support 
-/// flipbook is commented with '$FB:' string to allow to find it easilly 
-
 var bookFlip = {
   _width: [], //flipbook pages width
   _height: [], //flipbook pages height
@@ -117,9 +110,9 @@ var bookFlip = {
         this._spread = 0;
       }
     }
-
     $("#viewer").turn({
       elevation: 50,
+      duration: 2000, // Milliseconds (500ms = 0.5 sec)
       width:
         this._size(PDFViewerApplication.page, "width") * this._spreadMult(),
       height: this._size(PDFViewerApplication.page, "height"),
@@ -131,6 +124,7 @@ var bookFlip = {
         },
       },
       display: this._spreadType(),
+      turnCorners: "all",
     });
   },
   // shutdown flipbook

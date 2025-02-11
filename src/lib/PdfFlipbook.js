@@ -6,7 +6,7 @@ const PdfFlipbook = () => (
   <Iframe
     src="./pdf-viewer/index.html"
     width="100%"
-    height="500px"
+    height="700px"
     frameBorder="0"
     allowFullScreen
   />
